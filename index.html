@@ -1,148 +1,245 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aluminum 隐私政策</title>
-<style>
-  :root {
-    color-scheme: light dark;
-    --bg: #ffffff;
-    --fg: #1a1d21;
-    --muted: #5b6470;
-    --border: #e3e6ea;
-    --code-bg: #f2f4f6;
-    --accent: #2b6cb0;
-  }
-  @media (prefers-color-scheme: dark) {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy policy for the Aluminum browser extension.">
+  <title>Aluminum Privacy Policy</title>
+  <style>
     :root {
-      --bg: #16181d;
-      --fg: #eef0f2;
-      --muted: #9aa4b1;
-      --border: #2c3038;
-      --code-bg: #1f232a;
-      --accent: #6ea8dc;
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #1a1d21;
+      --muted: #5b6470;
+      --border: #e3e6ea;
+      --surface: #f2f4f6;
+      --accent: #2b6cb0;
     }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--fg);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
-    line-height: 1.7;
-  }
-  main {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 3rem 1.5rem 5rem;
-  }
-  h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
-  h2 { font-size: 1.2rem; margin-top: 2.2rem; border-top: 1px solid var(--border); padding-top: 1.5rem; }
-  .updated { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
-  .summary {
-    background: var(--code-bg);
-    border-radius: 10px;
-    padding: 1rem 1.25rem;
-    margin: 1rem 0 2rem;
-  }
-  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.92rem; }
-  th, td { text-align: left; padding: 0.6rem 0.7rem; border: 1px solid var(--border); vertical-align: top; }
-  th { background: var(--code-bg); }
-  code { background: var(--code-bg); padding: 0.1rem 0.35rem; border-radius: 4px; font-size: 0.9em; }
-  a { color: var(--accent); }
-  ul { padding-left: 1.3rem; }
-  .overflow { overflow-x: auto; }
-  footer { margin-top: 3rem; color: var(--muted); font-size: 0.85rem; }
-</style>
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16181d;
+        --fg: #eef0f2;
+        --muted: #aab2bd;
+        --border: #343a44;
+        --surface: #1f232a;
+        --accent: #7db5e8;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { overflow-wrap: anywhere; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+    main {
+      width: min(100%, 800px);
+      margin: 0 auto;
+      padding: 2rem 1.25rem 5rem;
+    }
+    nav {
+      margin-bottom: 2rem;
+      color: var(--muted);
+      text-align: right;
+    }
+    h1 {
+      margin: 0 0 0.25rem;
+      font-size: clamp(1.75rem, 6vw, 2.25rem);
+      line-height: 1.2;
+    }
+    h2 {
+      margin: 2.5rem 0 0.75rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 1.25rem;
+      line-height: 1.35;
+    }
+    p, ul { margin: 0.75rem 0; }
+    ul { padding-left: 1.4rem; }
+    .updated {
+      margin: 0 0 1.75rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .table-scroll {
+      max-width: 100%;
+      margin: 1rem 0;
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      min-width: 680px;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+    th, td {
+      padding: 0.65rem 0.75rem;
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+    th:last-child, td:last-child { border-right: 0; }
+    tbody tr:last-child td { border-bottom: 0; }
+    th { background: var(--surface); }
+    code {
+      padding: 0.1rem 0.35rem;
+      border-radius: 4px;
+      background: var(--surface);
+      font-size: 0.9em;
+    }
+    pre {
+      display: inline-block;
+      max-width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.75rem 1rem;
+      overflow-x: auto;
+      border-radius: 8px;
+      background: var(--surface);
+    }
+    pre code { padding: 0; }
+    a { color: var(--accent); }
+    footer {
+      margin-top: 3rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
 <body>
 <main>
-  <h1>Aluminum 隐私政策</h1>
-  <p class="updated">最后更新：2026-07-24</p>
+  <nav aria-label="Language"><strong>English</strong> · <a href="/aluminum-legal/zh-CN/" lang="zh-CN">中文</a></nav>
+  <h1>Aluminum Privacy Policy</h1>
+  <p class="updated">Effective: 2026-07-27</p>
 
-  <p>Aluminum（以下简称"本扩展"）是一款 Chromium 浏览器 AI 助手侧边栏扩展，帮助用户总结、理解、改造和自动化处理当前网页内容。我们非常重视你的隐私，本政策说明本扩展如何处理数据。</p>
+  <p>This policy describes how the Aluminum browser extension processes data. “Aluminum” means the extension and its developer.</p>
 
-  <div class="summary">
-    <strong>一句话总结：</strong>本扩展没有自己的后端服务器，不收集、不存储、不出售你的任何数据。所有数据要么只保存在你本机浏览器中，要么由你直接发送给你自己配置的第三方大模型服务商（Bring Your Own Key 模式）。
+  <h2>1. Summary</h2>
+  <p>Aluminum has no developer-operated backend, account service, analytics, or advertising SDK. This does <strong>not</strong> mean that no data leaves your device. When you initiate an AI request, Aluminum sends recent conversation content and relevant current-page tool results directly from the extension to the AI provider endpoint you configured. The provider, not Aluminum, receives and processes that request under its own terms and privacy policy.</p>
+  <p>Provider settings, API keys, consent state, interface preferences, and conversation history are stored locally in your browser. Aluminum does not sell user data.</p>
+
+  <h2>2. Data we process</h2>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Data category</th>
+          <th>What may be processed</th>
+          <th>Local handling</th>
+          <th>External transmission</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Current-page identity and content</td>
+          <td>Page title, URL, language, readable text, selected text, HTML, DOM structure and attributes, page metadata, inline or external scripts and stylesheets, and computed styles, depending on the tools used for your request</td>
+          <td>Held in runtime memory and tool context; page tool results are not added to Aluminum’s persistent conversation database</td>
+          <td>Relevant text and tool results are sent directly to your configured AI provider so it can answer or act on your request</td>
+        </tr>
+        <tr>
+          <td>Visible-tab screenshot</td>
+          <td>An image of the visible area of the active target tab, only when the screenshot tool is used</td>
+          <td>Held transiently as a data URL in tool details and not added to Aluminum’s persistent conversation database</td>
+          <td>In version <code>1.1.0</code>, the screenshot image bytes are not included in the AI-provider request; the provider receives only a text notice that a screenshot was captured and its data-URL length</td>
+        </tr>
+        <tr>
+          <td>Conversation content</td>
+          <td>Your prompts, quick-action prompts, recent conversation history, and AI responses; this content may include personal or confidential information that you choose to enter</td>
+          <td>Conversation messages are stored in browser-local IndexedDB</td>
+          <td>The current prompt and recent conversation context are sent directly to your configured AI provider</td>
+        </tr>
+        <tr>
+          <td>Provider configuration and credentials</td>
+          <td>Provider name, Base URL, model, protocol, and API key</td>
+          <td>Stored in <code>chrome.storage.local</code> and not synced by Aluminum</td>
+          <td>The Base URL selects the destination. The model and request content are sent to that endpoint, and the API key is sent to that endpoint as an authentication header</td>
+        </tr>
+        <tr>
+          <td>Consent and interface preferences</td>
+          <td>Consent version and acceptance time, language preference, and theme preference</td>
+          <td>Stored in <code>chrome.storage.local</code></td>
+          <td>Not sent to the AI provider by Aluminum</td>
+        </tr>
+        <tr>
+          <td>Session and undo state</td>
+          <td>The conversation associated with a tab and a temporary snapshot used to undo page changes, which can include page HTML, element attributes, page storage values changed during the turn, URL, and scroll position</td>
+          <td>Stored in <code>chrome.storage.session</code>, which is browser-session storage and is not synced by Aluminum</td>
+          <td>Not sent as session or undo records to the AI provider</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
+  <p>For Chrome Web Store disclosure purposes, Aluminum treats <code>Website content</code> as collected/processed because relevant current-page content is transmitted off-device to the AI provider selected by the user for the core feature. Aluminum’s developer does not receive that content through an Aluminum backend.</p>
 
-  <h2>我们收集 / 处理哪些数据</h2>
-  <div class="overflow">
-  <table>
-    <thead>
-      <tr><th>数据类型</th><th>用途</th><th>存储位置</th><th>是否发送给第三方</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>当前网页内容（标题、正文文本、完整 HTML 源码、DOM 结构、计算样式、外部脚本/样式表源码、你选中的文本片段——具体取决于当次对话里 AI 实际调用了哪些工具）</td>
-        <td>供 AI 总结/问答/页面改造/实现原理分析使用</td>
-        <td>仅临时存在于内存中，随会话结束丢弃</td>
-        <td>是——发送给你在"设置"页配置的大模型 API（如 DeepSeek / OpenAI / 通义千问等），用于生成回复</td>
-      </tr>
-      <tr>
-        <td>当前可见标签页截图</td>
-        <td>供需要视觉信息的分析/调试场景使用</td>
-        <td>仅临时存在于内存与工具调用详情中，随会话结束丢弃</td>
-        <td>视功能而定——若你配置的模型支持视觉输入，可能随请求发送给该大模型 API；否则仅用于本地工具调用详情展示，不发送给任何第三方</td>
-      </tr>
-      <tr>
-        <td>你与 AI 助手的对话记录</td>
-        <td>展示对话历史、支持继续对话</td>
-        <td>本机 IndexedDB（浏览器本地数据库），不上传云端</td>
-        <td>每轮对话内容会发送给你配置的大模型服务商</td>
-      </tr>
-      <tr>
-        <td>大模型 API Key、Base URL、模型名等 Provider 配置</td>
-        <td>让扩展能够调用你选择的大模型服务</td>
-        <td>本机 <code>chrome.storage.local</code>，不会同步到任何云端或 Aluminum 自己的服务器</td>
-        <td>仅用于向对应服务商发起请求时携带在请求头/请求体中，不会发送到其他任何第三方</td>
-      </tr>
-      <tr>
-        <td>Skill（自定义操作）配置</td>
-        <td>让你把常用操作固化为可复用指令</td>
-        <td>本机存储</td>
-        <td>否</td>
-      </tr>
-    </tbody>
-  </table>
+  <h2>3. How data is used</h2>
+  <p>Aluminum processes data only to provide the user-requested core feature: understand the current page, answer page-grounded questions, analyze page implementation, and perform approved page actions. Write tools show a confirmation before they run; one decision is remembered for the current turn.</p>
+  <p>Aluminum does not use data for advertising, profiling, credit or eligibility decisions, unrelated product development, or sale to third parties. The configured AI provider may have its own processing, retention, or model-training terms, which you must review separately.</p>
+
+  <h2>4. First-use consent</h2>
+  <p>The side panel and Options page show a privacy notice before the product UI is available. Until a current consent record exists, Aluminum does not initialize an Agent run, extract page content, capture a screenshot, or call an AI provider.</p>
+  <p>Selecting <code>Not now</code> does not save consent and leaves the notice in place. Selecting <code>Agree &amp; continue</code> stores a versioned consent record in <code>chrome.storage.local</code>. If the consent read or write fails, Aluminum fails closed and keeps the product unavailable. A future material change to data use will require a new consent version.</p>
+
+  <h2>5. Local storage and deletion</h2>
+  <ul>
+    <li>Provider settings, API keys, consent state, language, and theme are stored in <code>chrome.storage.local</code>.</li>
+    <li>Conversation messages are stored in browser-local IndexedDB.</li>
+    <li>Tab-to-conversation state and undo snapshots are stored temporarily in <code>chrome.storage.session</code>.</li>
+    <li>Page tool results and screenshot data URLs are not written to Aluminum’s persistent conversation database.</li>
+  </ul>
+  <p>You can delete individual conversations and remove provider configurations in Aluminum. Clearing the extension’s browser data or uninstalling Aluminum removes its local data. Deleting Aluminum’s local data does not delete copies already processed or retained by your AI provider; use that provider’s controls and policy for those copies.</p>
+
+  <h2>6. Third-party AI providers</h2>
+  <p>You choose and configure the provider endpoint. Aluminum supports OpenAI-compatible and Anthropic-compatible APIs, including custom or locally hosted endpoints.</p>
+  <p>For each AI request, Aluminum connects directly to the configured Base URL and may send the model identifier, system instructions, tool definitions, your current prompt, recent conversation context, and relevant page-derived tool results. The API key is included as an authentication credential for that endpoint. Aluminum does not proxy these requests through a developer-operated server and cannot control the provider’s security, retention, training, or disclosure practices.</p>
+  <p>Before using a provider, review its privacy policy and terms. Do not submit page content or conversation content that you are not authorized to share with that provider.</p>
+  <p>Use an HTTPS Base URL for every remote provider. Aluminum sends requests to the configured URL as entered and does not upgrade an insecure remote HTTP URL. A loopback HTTP URL such as <code>http://localhost</code> may be used for a provider running on the same device.</p>
+
+  <h2>7. Browser permissions</h2>
+  <p>Aluminum <code>1.1.0</code> uses this permission set:</p>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><code>activeTab</code></td><td>Supports user-invoked access to the active page</td></tr>
+        <tr><td><code>tabs</code></td><td>Identifies and validates the target tab, reads its title and URL, opens the extension settings page, and performs user-requested navigation</td></tr>
+        <tr><td><code>scripting</code></td><td>Runs packaged read and structured-write functions in the target page and captures undo state</td></tr>
+        <tr><td><code>storage</code></td><td>Stores local settings and consent plus temporary session and undo state</td></tr>
+        <tr><td><code>sidePanel</code></td><td>Hosts Aluminum’s primary interface</td></tr>
+        <tr><td><code>userScripts</code></td><td>Runs AI-generated JavaScript for approved transformations through Chrome’s official user-scripts API; Chrome also requires the user to enable “Allow User Scripts”</td></tr>
+        <tr><td>Host access: <code>&lt;all_urls&gt;</code></td><td>Lets the same current-page Agent work on user-selected HTTP and HTTPS sites and fetch page-referenced resources</td></tr>
+      </tbody>
+    </table>
   </div>
+  <p>Read-only page tools may run after you initiate an Agent request. Page-changing tools require confirmation before the first write action in a turn. Aluminum does not passively build a browsing-history profile.</p>
 
-  <h2>我们不会做的事</h2>
-  <ul>
-    <li>不运营任何用于收集用户数据的后台服务器；本扩展的网络请求要么是你主动触发的页面抓取，要么是你自己配置的大模型服务商 API 调用。</li>
-    <li>不做用户行为分析、不接入任何第三方统计/广告 SDK。</li>
-    <li>不会将你的 API Key、浏览记录或对话内容出售、出租或分享给除你自行配置的大模型服务商之外的任何第三方。</li>
-    <li>不会读取或处理你未主动触发扩展操作的网页（扩展在你打开侧边栏并发起请求前不会主动抓取或上传页面内容）。</li>
-  </ul>
+  <h2>8. External resources and SSRF protection</h2>
+  <p>For page-implementation analysis, Aluminum may follow HTTP or HTTPS URLs found in the current page’s <code>&lt;script src&gt;</code> and stylesheet <code>&lt;link href&gt;</code> elements to retrieve source text. The request goes directly to the referenced resource host, which can receive normal network metadata such as your IP address.</p>
+  <p>Before fetching, Aluminum rejects non-HTTP(S) URLs and literal hosts matching localhost, unspecified, loopback, common private-network, link-local, and IPv6 unique-local ranges. Allowed source text may be sent to your configured AI provider as part of the requested analysis. These checks reduce server-side request forgery (SSRF) risk but are not a guarantee against every network or DNS-based attack; use Aluminum on pages and networks you trust.</p>
 
-  <h2>关于权限的说明</h2>
-  <p>本扩展请求以下浏览器权限，均为实现核心功能所必需：<code>activeTab</code>、<code>tabs</code>、<code>scripting</code>、<code>storage</code>、<code>sidePanel</code>、<code>userScripts</code>，以及用于读取当前页面内容的 host 权限（<code>&lt;all_urls&gt;</code>）。其中 <code>userScripts</code> 用于通过 Chrome 官方 <code>chrome.userScripts.execute()</code> API 将 AI 生成的脚本注入页面，需要你在扩展详情页手动开启「允许用户脚本」开关后才会生效；未开启时该功能会明确报错并提示你去开启，不会静默绕过。</p>
+  <h2>9. Children’s privacy</h2>
+  <p>Aluminum is not directed to children under 13 and does not knowingly solicit children’s personal information. Aluminum does not operate accounts or an age-verification service. A parent or guardian who believes a child entered personal information should clear the extension’s local data, contact the configured AI provider about any transmitted copy, and may contact us at the address below.</p>
 
-  <h2>关于外部脚本/样式表抓取功能</h2>
-  <p>当你请求 AI 分析"这个页面是怎么实现的"这类问题时，扩展可能会跟随页面中 <code>&lt;script src&gt;</code> / <code>&lt;link href&gt;</code> 引用的地址，自动抓取外部脚本、样式表的源码内容供 AI 分析引用——这是 Agent 根据页面内容自动发现并请求的地址，而非你手动提供的 URL。抓取前会过滤内网、回环、链路本地地址等风险目标（如 127.0.0.1、10.0.0.0/8、172.16.0.0/12、192.168.0.0/16、169.254.0.0/16 等云元数据常用网段），防止被恶意页面诱导用于内部网络探测（SSRF）。抓取到的内容仅用于当次分析展示，并按上表说明发送给你配置的大模型 API，不会被本扩展保存到远程服务器。</p>
+  <h2>10. Chrome Web Store Limited Use</h2>
+  <p>Aluminum’s use and transfer of information received from Google APIs complies with the Chrome Web Store User Data Policy, including its Limited Use requirements. Data is used only to provide or improve the user-facing core feature, and transfers are limited to the AI provider selected by the user and resource hosts contacted as necessary for a user-requested operation.</p>
+  <p>Aluminum does not sell user data, use it for advertising, use it to determine creditworthiness or lending eligibility, or permit humans to read it through an Aluminum backend.</p>
 
-  <h2>数据保留与删除</h2>
-  <ul>
-    <li>对话历史与 Provider 配置保存在你本机浏览器中，卸载扩展或清除浏览器数据即可完全删除。</li>
-    <li>由于本扩展不运营后端服务器，我们本身不持有你的任何数据副本。</li>
-  </ul>
+  <h2>11. Policy changes</h2>
+  <p>If this policy changes, we will update the effective date and record the change in the project repository. If a change materially affects what data Aluminum processes or where it is sent, Aluminum will increment the consent version and ask for consent again before the product UI becomes available.</p>
 
-  <h2>第三方服务商</h2>
-  <p>当你配置某个大模型 Provider（如 OpenAI、DeepSeek、阿里通义千问、智谱 GLM、Moonshot 等）后，你与 AI 的对话内容将按该服务商自身的隐私政策进行处理。请在使用前查阅对应服务商的隐私政策：</p>
-  <ul>
-    <li>OpenAI: <a href="https://openai.com/privacy">https://openai.com/privacy</a></li>
-    <li>DeepSeek: <a href="https://www.deepseek.com/privacy">https://www.deepseek.com/privacy</a></li>
-    <li>阿里云通义千问 / 智谱 / Moonshot：请参阅各自官网隐私政策</li>
-  </ul>
+  <h2>12. Contact</h2>
+  <p>Questions about this policy can be sent to:</p>
+  <pre><code>liudong.ucas@gmail.com</code></pre>
 
-  <h2>政策变更</h2>
-  <p>如本政策发生实质性变更，我们会更新本页顶部的"最后更新"日期，并在项目仓库中记录变更历史。</p>
-
-  <h2>联系方式</h2>
-  <p>如对本隐私政策有任何疑问，请通过 <a href="mailto:liudong.ucas@gmail.com">liudong.ucas@gmail.com</a> 联系我们。</p>
-
-  <footer>Aluminum — AI 助手侧边栏浏览器扩展</footer>
+  <footer>Aluminum browser extension</footer>
 </main>
 </body>
 </html>
